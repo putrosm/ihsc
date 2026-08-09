@@ -25,6 +25,11 @@ Secrets yang dibutuhkan (sudah di-set di repo):
 - `WEBDAV_USER` — akun WebDisk
 - `WEBDAV_PASS` — password WebDisk
 
+> **Catatan cache:** situs berada di belakang Cloudflare. HTML selalu fresh
+> (DYNAMIC), tapi CSS statis di-cache. Setiap mengubah `assets/ihsc.css`,
+> **bump versi query string** di ketiga halaman (`?v=2` → `?v=3`, dst.)
+> supaya pengunjung mendapat CSS terbaru.
+
 ## Menambah artikel
 
 1. Salin `berita/artikel/artikel-001.html` → `artikel-XXX.html`, isi konten.
