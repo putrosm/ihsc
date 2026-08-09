@@ -1,0 +1,49 @@
+name: Deploy ke WebDAV (ihsc.iiknutuban.ac.id)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload via WebDAV
+        env:
+          WEBDAV_URL: ${{ secrets.WEBDAV_URL }}
+          WEBDAV_USER: ${{ secrets.WEBDAV_USER }}
+          WEBDAV_PASS: ${{ secrets.WEBDAV_PASS }}
+        run: |
+          set -euo pipefail
+          BASE="$WEBDAV_URL"
+          AUTH="$WEBDAV_USER:$WEBDAV_PASS"
+          cd "$GITHUB_WORKSPACE"
+
+          # kumpulkan semua file (kecuali git, workflow, README)
+          mapfile -t FILES < <(find . -type f \
+              ! -path './.git/*' ! -path './.github/*' \
+              ! -name 'README.md' ! -name '.gitignore' \
+              -printf '%P\n')
+
+          # buat hirarki folder (MKCOL; abaikan kalau sudah ada)
+          for f in "${FILES[@]}"; do
+            dir=$(dirname "$f")
+            [ "$dir" = "." ] && continue
+            cur=""
+            IFS='/' read -ra parts <<< "$dir"
+            for p in "${parts[@]}"; do
+              cur="${cur}/${p}"
+              curl -sf -o /dev/null -u "$AUTH" -X MKCOL "$BASE${cur}/" || true
+            done
+          done
+
+          # upload semua file
+          for f in "${FILES[@]}"; do
+            curl -sf -o /dev/null -u "$AUTH" -T "$f" "$BASE/$f" || { echo "GAGAL upload: $f"; exit 1; }
+            echo "ok: $f"
+          done
+
+          echo "Deploy selesai — ${#FILES[@]} file"
