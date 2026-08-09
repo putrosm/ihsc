@@ -79,25 +79,22 @@
 
 > Sudah terpasang di situs (section `#visi-misi` setelah Tentang) — menunggu ACC judul section (V06).
 
-## E. BIDANG — Lima Bidang Akademik (susunan lengkap dari SK No. 177/IIKNU/SK-PSH/A.1/L-14/V/2026)
+## E. BIDANG — 5 Bidang + 2 Biro (25 pengurus, dari SK 177/IIKNU/SK-PSH/A.1/L-14/V/2026)
 
-1. **Kesehatan Konflik dan Pengungsi**
-   - Koordinator: dr. Angie Erditha, MScIH, DTM
-   - Anggota: dr. Reisya Gina Nurfajri, MPH; Arjuna Nurmansyah Wijaya, S.Kep
-2. **Etika dan Hukum Kemanusiaan**
-   - Koordinator: Muhammad Hazir Rahim, M.Ag.
-   - Anggota: Ogy Winenriandhika, S.H., M.M.; Aris Puji Utami, SST., M.Kes
-3. **Risiko dan Respons Bencana**
-   - Koordinator: Dr. dr. Lucky Tjahjono, M.Kes.
-   - Anggota: dr. Iqbal El Mubarak, SpB; M. Nurhadi, S.Kep.Ns., M.Kep., MM
-4. **Operasi dan Manajemen Kemanusiaan**
-   - Koordinator: Zulfahmi Ramli, SE
-   - Anggota: Lilia Faridatul Fauziah, S.Tr., Keb., M.Gz
-5. **Perubahan Iklim** — nama final mengikuti SK (keputusan Prinsipal, 9 Agu 2026)
-   - Koordinator: Dr. Dea Tania Octarina, S.Si., M.Sc. (berbasis di Jepang)
-   - Anggota: Mepsa Putra, S.Kep.Ns., M.Kep., Sp.Kep.K
+| # | Bidang | Koordinator | Anggota |
+|---|--------|-------------|---------|
+| 1 | Kesehatan Konflik dan Pengungsi | dr. Angie Erditha, MScIH, DTM | dr. Reisya Gina Nurfajri, MPH; Arjuna Nurmansyah Wijaya, S.Kep |
+| 2 | Etika dan Hukum Kemanusiaan | Muhammad Hazir Rahim, M.Ag. | Ogy Winenriandhika, S.H., M.M.; Aris Puji Utami, SST., M.Kes |
+| 3 | Risiko dan Respons Bencana | Dr. dr. Lucky Tjahjono, M.Kes. | dr. Iqbal El Mubarak, SpB; M. Nurhadi, S.Kep.Ns., M.Kep., MM |
+| 4 | Operasi dan Manajemen Kemanusiaan | Zulfahmi Ramli, SE | Lilia Faridatul Fauziah, S.Tr., Keb., M.Gz |
+| 5 | Perubahan Iklim | Dr. Dea Tania Octarina, S.Si., M.Sc. (Jepang) | Mepsa Putra, S.Kep.Ns., M.Kep., Sp.Kep.K |
 
-> Sumber data: SK 177/…/V/2026 (detail & catatan kurasi di REFERENSI-SK-PSH-IIKNU.md).
+| Biro | Koordinator | Anggota |
+|------|-------------|---------|
+| Administrasi | dr. Celine Basthomi | Hanim Nur Faizah, S.Kep.Ns., M.Kep; Hyan Oktodia Basuki, S.Kep.Ns., M.Kep |
+| Keuangan | dr. Sri Ayu Alga Dewi | Eva Silviana Rahmawati, SST., M.Kes |
+
+> Istilah final: **5 bidang + 2 biro**. Semua nama sudah diverifikasi dari SK (3 sumber OCR).
 
 ## F. BIRO — Dua Biro
 

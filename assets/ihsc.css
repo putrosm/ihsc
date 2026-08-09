@@ -68,6 +68,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+[hidden] { display: none !important; }
 
 html { scroll-behavior: smooth; }
 
@@ -326,7 +327,8 @@ p { max-width: 68ch; }
 .division .no { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--color-accent); line-height: 1; }
 .division h3 { font-size: 20px; margin-bottom: 6px; color: var(--color-brand-deep); }
 .division p { color: var(--color-text-muted); font-size: 15px; }
-.division .coord { font-size: var(--label-sm); font-weight: 600; color: var(--color-brand); }
+.division .coord { font-size: var(--body-sm); font-weight: 600; color: var(--color-text); display: block; margin: 3px 0; }
+.division .coord:first-of-type { color: var(--color-brand); }
 .division .badge { justify-self: end; }
 
 .badge {
