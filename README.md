@@ -1,6 +1,6 @@
 # IHSC — Indonesian Humanitarian Study Center
 
-Situs resmi IHSC (Pusat Studi Humanitarian / PSH): homepage + kantor berita.
+Situs resmi IHSC (Pusat Studi Kemanusiaan — IIK NU Tuban): homepage + kantor berita.
 Situs statis murni (HTML/CSS), tanpa build step.
 
 - **Live:** https://ihsc.iiknutuban.ac.id
