@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IHSC — Indonesian Humanitarian Study Center. Pusat Studi Kemanusiaan, IIK Nahdlatul Ulama Tuban. Kajian, pendidikan, dan advokasi kemanusiaan.">
+  <meta name="description" content="IHSC — Indonesian Humanitarian Study Center. Humanitarian Study Center under IIK Nahdlatul Ulama Tuban.">
   <meta property="og:title" content="IHSC — Indonesian Humanitarian Study Center">
-  <meta property="og:description" content="Pusat Studi Kemanusiaan — IIK Nahdlatul Ulama Tuban. Berpijak di bumi Nusantara, berpandang seluas cakrawala dunia.">
+  <meta property="og:description" content="Knowledge, for real action. Humanitarian Study Center — IIK NU Tuban.">
   <meta property="og:type" content="website">
   <title>IHSC — Indonesian Humanitarian Study Center</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/ihsc.css?v=2">
+  <link rel="stylesheet" href="assets/ihsc.css?v=4">
 </head>
 <body>
-  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <a class="skip-link" href="#konten">Skip to content / Langsung ke konten</a>
 
   <!-- ═══ HEADER ═══ -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="IHSC — beranda">
-        <img class="brand-logo" src="assets/logo.png" alt="Logo IHSC" width="48" height="48">
+      <a class="brand" href="index.html" aria-label="IHSC — home">
+        <img class="brand-logo" src="assets/logo.png" alt="IHSC logo" width="48" height="48">
         <span class="brand-text">
           <span class="brand-name">Indonesian Humanitarian Study Center</span>
-          <span class="brand-sub">Pusat Studi Kemanusiaan · IIK NU Tuban</span>
+          <span class="brand-sub" data-lang="en">Humanitarian Study Center · IIK NU Tuban</span>
+          <span class="brand-sub" data-lang="id" hidden>Pusat Studi Kemanusiaan · IIK NU Tuban</span>
         </span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Buka menu">
-        ☰
-      </button>
-
-      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
-          <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#struktur">Struktur</a></li>
-          <li><a href="berita/index.html">Kantor Berita</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-          <li class="nav-cta"><a href="#kontak">Hubungi Kami</a></li>
+          <li><a href="#tentang" data-lang="en">About</a><a href="#tentang" data-lang="id" hidden>Tentang</a></li>
+          <li><a href="#visi-misi" data-lang="en">Vision &amp; Mission</a><a href="#visi-misi" data-lang="id" hidden>Visi &amp; Misi</a></li>
+          <li><a href="#bidang" data-lang="en">Divisions</a><a href="#bidang" data-lang="id" hidden>Bidang</a></li>
+          <li><a href="#program" data-lang="en">Programs</a><a href="#program" data-lang="id" hidden>Program</a></li>
+          <li><a href="berita/index.html" data-lang="en">News Desk</a><a href="berita/index.html" data-lang="id" hidden>Kantor Berita</a></li>
+          <li><a href="#kontak" data-lang="en">Contact</a><a href="#kontak" data-lang="id" hidden>Kontak</a></li>
+          <li class="nav-cta"><a href="#kontak" data-lang="en">Contact Us</a><a href="#kontak" data-lang="id" hidden>Hubungi Kami</a></li>
         </ul>
+        <div class="lang-toggle" role="group" aria-label="Language / Bahasa">
+          <button type="button" class="lang-btn" data-setlang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-setlang="id" aria-pressed="false">ID</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -49,239 +52,181 @@
     <section class="hero">
       <div class="container hero-inner">
         <div>
-          <span class="eyebrow">Indonesian Humanitarian Study Center</span>
-          <h1>Pengetahuan kemanusiaan, <em>untuk aksi nyata.</em></h1>
-          <p class="hero-lede">
-            IHSC adalah Pusat Studi Kemanusiaan di bawah IIK Nahdlatul Ulama
-            Tuban — ruang kajian, pendidikan, dan advokasi kemanusiaan yang
-            berakar pada nilai khidmah, keilmuan, dan identitas Nusantara.
-          </p>
+          <span class="eyebrow" data-lang="en">IHSC · Humanitarian Study Center</span>
+          <span class="eyebrow" data-lang="id" hidden>IHSC · Pusat Studi Kemanusiaan</span>
+          <h1 data-lang="en">Knowledge, <em>for real action.</em></h1>
+          <h1 data-lang="id" hidden>Pengetahuan, <em>untuk aksi nyata.</em></h1>
+          <p class="hero-lede" data-lang="en">IHSC is the Humanitarian Study Center under IIK Nahdlatul Ulama Tuban — a space for humanitarian research and advocacy, rooted in the values of dedication, scholarship, and Nusantara identity.</p>
+          <p class="hero-lede" data-lang="id" hidden>IHSC adalah Pusat Studi Kemanusiaan di bawah IIK Nahdlatul Ulama Tuban — ruang kajian dan advokasi kemanusiaan yang berakar pada nilai pengabdian, keilmuan, dan identitas Nusantara.</p>
           <div class="hero-actions">
-            <a class="btn btn--light" href="#tentang">Kenali IHSC</a>
-            <a class="btn btn--outline-light" href="berita/index.html">Kantor Berita →</a>
+            <a class="btn btn--light" href="#tentang" data-lang="en">Discover IHSC</a>
+            <a class="btn btn--light" href="#tentang" data-lang="id" hidden>Kenali IHSC</a>
+            <a class="btn btn--outline-light" href="berita/index.html" data-lang="en">News Desk →</a>
+            <a class="btn btn--outline-light" href="berita/index.html" data-lang="id" hidden>Kantor Berita →</a>
           </div>
         </div>
-
-        <aside class="hero-panel" aria-label="Profil singkat IHSC">
-          <div class="panel-head">
-            <span>Profil</span>
-            <span class="dot" aria-hidden="true"></span>
-          </div>
+        <aside class="hero-panel" aria-label="IHSC at a glance">
+          <div class="panel-head"><span data-lang="en">Profile</span><span data-lang="id" hidden>Profil</span><span class="dot" aria-hidden="true"></span></div>
           <div class="panel-body">
-            <blockquote class="panel-quote">
-              “Berpijak di bumi Nusantara, berpandang seluas cakrawala dunia.”
-              <cite>— Moto IHSC</cite>
-            </blockquote>
             <div class="panel-list">
-              <div><span>SK Rektor No. 177/…/V/2026</span><b>12 Mei 2026</b></div>
-              <div><span>Pengurus aktif</span><b>25 orang</b></div>
-              <div><span>Divisi akademik</span><b>5 bidang</b></div>
-              <div><span>Direktur</span><b>dr. Putro S. Muhammad, MH, CIHL</b></div>
+              <div><span data-lang="en">Rector's Decree 177/…/V/2026</span><span data-lang="id" hidden>SK Rektor 177/…/V/2026</span><b>12 May 2026</b></div>
+              <div><span data-lang="en">Officers</span><span data-lang="id" hidden>Pengurus</span><b>25</b></div>
+              <div><span data-lang="en">Academic fields</span><span data-lang="id" hidden>Bidang</span><b>5</b></div>
+              <div><span data-lang="en">Director</span><span data-lang="id" hidden>Direktur</span><b>dr. Putro S. Muhammad, MH, CIHL</b></div>
             </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- ═══ NILAI ═══ -->
-    <section class="values" aria-label="Nilai IHSC">
+    <!-- ═══ VALUES ═══ -->
+    <section class="values" aria-label="IHSC values">
       <div class="container values-inner">
-        <div>
-          <span class="num">01</span>
-          <h3>Khidmah</h3>
-          <p>Pengabdian sebagai pangkal setiap kajian dan aksi — melayani, bukan melayani diri.</p>
-        </div>
-        <div>
-          <span class="num">02</span>
-          <h3>Keilmuan</h3>
-          <p>Standar akademik yang ketat: berbasis bukti, jujur, dan dapat dipertanggungjawabkan.</p>
-        </div>
-        <div>
-          <span class="num">03</span>
-          <h3>Identitas</h3>
-          <p>Berakar pada NU, Nusantara, dan Islam — kontekstual dengan realitas Indonesia.</p>
-        </div>
+        <div><span class="num">01</span><h3 data-lang="en">Dedication</h3><h3 data-lang="id" hidden>Pengabdian</h3><p data-lang="en">Dedication as the foundation of every study and action — to serve, not to be served.</p><p data-lang="id" hidden>Pengabdian sebagai pangkal setiap kajian dan aksi — melayani, bukan dilayani.</p></div>
+        <div><span class="num">02</span><h3 data-lang="en">Scholarship</h3><h3 data-lang="id" hidden>Keilmuan</h3><p data-lang="en">Rigorous academic standards: evidence-based, honest, and accountable.</p><p data-lang="id" hidden>Standar akademik yang ketat: berbasis bukti, jujur, dan dapat dipertanggungjawabkan.</p></div>
+        <div><span class="num">03</span><h3 data-lang="en">Identity</h3><h3 data-lang="id" hidden>Identitas</h3><p data-lang="en">Rooted in NU, the Nusantara, and Islam — contextual to Indonesian realities.</p><p data-lang="id" hidden>Berakar pada NU, Nusantara, dan Islam — kontekstual dengan realitas Indonesia.</p></div>
       </div>
     </section>
 
-    <!-- ═══ TENTANG ═══ -->
+    <!-- ═══ ABOUT ═══ -->
     <section class="section" id="tentang">
       <div class="container tentang-grid">
         <div>
-          <span class="eyebrow">Tentang</span>
-          <h2 class="lead" style="margin-top:14px">
-            Pusat studi kemanusiaan yang <strong>berakar</strong> dan
-            <strong>berpandangan dunia</strong>.
-          </h2>
+          <span class="eyebrow" data-lang="en">About</span><span class="eyebrow" data-lang="id" hidden>Tentang</span>
+          <h2 class="lead" style="margin-top:14px" data-lang="en">A humanitarian study center that is <strong>rooted</strong> and <strong>outward-looking</strong>.</h2>
+          <h2 class="lead" style="margin-top:14px" data-lang="id" hidden>Pusat studi kemanusiaan yang <strong>berakar</strong> dan <strong>berpandangan dunia</strong>.</h2>
         </div>
         <div>
-          <p class="body">
-            IHSC — Indonesian Humanitarian Study Center, atau Pusat Studi
-            Kemanusiaan (PSH), berdiri pada 12 Mei 2026 berdasarkan
-            SK Rektor No. 177/IIKNU/SK-PSH/A.1/L-14/V/2026 di lingkungan
-            Institut Ilmu Kesehatan (IIK) Nahdlatul Ulama Tuban, di bawah
-            Rektor Dr. H. Miftahul Munir, SKM., M.Kes., DIE.
-          </p>
-          <p class="body">
-            IHSC dikelola oleh 25 pengurus: lima divisi akademik (B1–B5),
-            dua divisi operasional, serta pimpinan pusat. Direktur,
-            dr. Putro S. Muhammad, MH, CIHL, memegang sertifikasi
-            <em>Certified in International Humanitarian Law</em> — kredensial
-            yang menopang kredibilitas IHSC di mata mitra internasional
-            seperti ICRC, UNHCR, dan organisasi kemanusiaan global.
-          </p>
-          <div class="highlight-box">
-            <blockquote>
-              “Berpijak di bumi Nusantara, berpandang seluas cakrawala dunia.”
-            </blockquote>
-            <cite>Moto IHSC</cite>
+          <p class="body" data-lang="en">IHSC — Indonesian Humanitarian Study Center (Pusat Studi Kemanusiaan, PSH), was established on 12 May 2026 under Rector's Decree No. 177/IIKNU/SK-PSH/A.1/L-14/V/2026 at the Institute of Health Sciences (IIK) Nahdlatul Ulama Tuban, under Rector Dr. H. Miftahul Munir, SKM., M.Kes., DIE. IHSC is managed by 25 officers: five academic fields, two bureaus, and the center's leadership.</p>
+          <p class="body" data-lang="id" hidden>IHSC — Indonesian Humanitarian Study Center, atau Pusat Studi Kemanusiaan (PSH), berdiri pada 12 Mei 2026 berdasarkan SK Rektor No. 177/IIKNU/SK-PSH/A.1/L-14/V/2026 di lingkungan Institut Ilmu Kesehatan (IIK) Nahdlatul Ulama Tuban, di bawah Rektor Dr. H. Miftahul Munir, SKM., M.Kes., DIE. IHSC dikelola oleh 25 pengurus: lima bidang akademik, dua biro, serta pimpinan pusat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ VISION & MISSION ═══ -->
+    <section class="section section--alt" id="visi-misi">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-lang="en">Vision &amp; Mission</span><span class="eyebrow" data-lang="id" hidden>Visi &amp; Misi</span>
+          <h2 data-lang="en">Vision &amp; Mission</h2><h2 data-lang="id" hidden>Visi &amp; Misi</h2>
+        </div>
+        <div class="tentang-grid">
+          <div>
+            <h3 class="visi-title" data-lang="en">Vision</h3><h3 class="visi-title" data-lang="id" hidden>Visi</h3>
+            <p class="body" data-lang="en">To become a world-leading humanitarian study center integrating health sciences, law, and humanitarian action — grounded in Islamic values and national identity.</p>
+            <p class="body" data-lang="id" hidden>Menjadi pusat studi humanitarian terkemuka di dunia yang mengintegrasikan ilmu kesehatan, hukum, dan aksi kemanusiaan berlandaskan nilai keislaman dan kebangsaan.</p>
+          </div>
+          <div>
+            <h3 class="visi-title" data-lang="en">Mission</h3><h3 class="visi-title" data-lang="id" hidden>Misi</h3>
+            <ul class="visi-list">
+              <li data-lang="en">Conduct research in health in conflict and displacement, humanitarian ethics and law, disaster risk and response, humanitarian operations and management, and climate change.</li>
+              <li data-lang="id" hidden>Menyelenggarakan penelitian di bidang kesehatan konflik dan pengungsi, etika dan hukum kemanusiaan, risiko dan respons bencana, operasi dan manajemen kemanusiaan, serta perubahan iklim.</li>
+              <li data-lang="en">Organize education and training to build the capacity of human resources in humanitarian affairs.</li>
+              <li data-lang="id" hidden>Menyelenggarakan pendidikan dan pelatihan untuk pengembangan kapasitas sumber daya manusia di bidang kemanusiaan.</li>
+              <li data-lang="en">Build strategic partnerships with national and international institutions to strengthen humanitarian action.</li>
+              <li data-lang="id" hidden>Membangun kemitraan strategis dengan lembaga nasional dan internasional dalam rangka penguatan aksi kemanusiaan.</li>
+              <li data-lang="en">Develop and disseminate Islamic perspectives within the global humanitarian discourse.</li>
+              <li data-lang="id" hidden>Mengembangkan dan menyebarluaskan perspektif keislaman dalam wacana humanitarian global.</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ STRUKTUR ═══ -->
-    <section class="section section--alt" id="struktur">
+    <!-- ═══ DIVISIONS ═══ -->
+    <section class="section" id="bidang">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Struktur</span>
-          <h2>Lima divisi akademik, dua divisi operasional</h2>
-          <p>Seluruh koordinator divisi bekerja jarak jauh dan terhubung ke pusat di Tuban — jejaring kemanusiaan yang tersebar di Indonesia dan luar negeri.</p>
+          <span class="eyebrow" data-lang="en">Divisions</span><span class="eyebrow" data-lang="id" hidden>Bidang</span>
+          <h2 data-lang="en">Five academic fields and two operational bureaus</h2>
+          <h2 data-lang="id" hidden>Lima bidang akademik dan dua biro</h2>
+          <p data-lang="en">Coordinated remotely and connected to the center in Tuban — a humanitarian network across Indonesia and abroad.</p>
+          <p data-lang="id" hidden>Dikoordinasikan dari jarak jauh dan terhubung ke pusat di Tuban — jejaring kemanusiaan yang tersebar di Indonesia dan luar negeri.</p>
         </div>
 
         <div class="divisions">
-          <article class="division">
-            <span class="no">B1</span>
-            <div>
-              <h3>Kesehatan Konflik dan Pengungsi</h3>
-              <p>Kajian kesehatan dalam situasi konflik dan pengungsian.</p>
-              <span class="coord">Koordinator: dr. Angie Erditha</span>
-            </div>
-            <span class="badge badge--emergency">Darurat</span>
-          </article>
-          <article class="division">
-            <span class="no">B2</span>
-            <div>
-              <h3>Etika dan Hukum Kemanusiaan</h3>
-              <p>Kajian etika, hukum humaniter internasional, dan perlindungan sipil.</p>
-              <span class="coord">Koordinator: Muhammad Hazir Rahim</span>
-            </div>
-            <span class="badge badge--policy">Kebijakan</span>
-          </article>
-          <article class="division">
-            <span class="no">B3</span>
-            <div>
-              <h3>Risiko dan Respons Bencana</h3>
-              <p>Kajian manajemen risiko, kesiapsiagaan, dan respons bencana.</p>
-              <span class="coord">Koordinator: Dr. dr. Lucky Tjahjono</span>
-            </div>
-            <span class="badge badge--research">Riset</span>
-          </article>
-          <article class="division">
-            <span class="no">B4</span>
-            <div>
-              <h3>Operasi dan Manajemen Kemanusiaan</h3>
-              <p>Kajian tata kelola operasi bantuan dan manajemen logistik kemanusiaan.</p>
-              <span class="coord">Koordinator: Zulfahmi Ramli</span>
-            </div>
-            <span class="badge badge--humanitarian">Kemanusiaan</span>
-          </article>
-          <article class="division">
-            <span class="no">B5</span>
-            <div>
-              <h3>Perubahan Iklim dan Dampak Kemanusiaan</h3>
-              <p>Kajian dampak perubahan iklim terhadap kerentanan dan krisis kemanusiaan.</p>
-              <span class="coord">Koordinator: Dr. Dea Tania Octarina <em>(berbasis di Jepang)</em></span>
-            </div>
-            <span class="badge badge--research">Riset</span>
-          </article>
+          <article class="division"><span class="no">01</span><div><h3 data-lang="en">Health in Conflict and Displacement</h3><h3 data-lang="id" hidden>Kesehatan Konflik dan Pengungsi</h3><span class="coord">dr. Angie Erditha, MScIH, DTM</span><span class="coord" data-lang="en">Members: dr. Reisya Gina Nurfajri, MPH; Arjuna Nurmansyah Wijaya, S.Kep</span><span class="coord" data-lang="id" hidden>Anggota: dr. Reisya Gina Nurfajri, MPH; Arjuna Nurmansyah Wijaya, S.Kep</span></div><span class="badge badge--emergency"><span data-lang="en">Emergency</span><span data-lang="id" hidden>Darurat</span></span></article>
+          <article class="division"><span class="no">02</span><div><h3 data-lang="en">Humanitarian Ethics and Law</h3><h3 data-lang="id" hidden>Etika dan Hukum Kemanusiaan</h3><span class="coord">Muhammad Hazir Rahim, M.Ag.</span><span class="coord" data-lang="en">Members: Ogy Winenriandhika, S.H., M.M.; Aris Puji Utami, SST., M.Kes</span><span class="coord" data-lang="id" hidden>Anggota: Ogy Winenriandhika, S.H., M.M.; Aris Puji Utami, SST., M.Kes</span></div><span class="badge badge--policy"><span data-lang="en">Policy</span><span data-lang="id" hidden>Kebijakan</span></span></article>
+          <article class="division"><span class="no">03</span><div><h3 data-lang="en">Disaster Risk and Response</h3><h3 data-lang="id" hidden>Risiko dan Respons Bencana</h3><span class="coord">Dr. dr. Lucky Tjahjono, M.Kes.</span><span class="coord" data-lang="en">Members: dr. Iqbal El Mubarak, SpB; M. Nurhadi, S.Kep.Ns., M.Kep., MM</span><span class="coord" data-lang="id" hidden>Anggota: dr. Iqbal El Mubarak, SpB; M. Nurhadi, S.Kep.Ns., M.Kep., MM</span></div><span class="badge badge--research"><span data-lang="en">Research</span><span data-lang="id" hidden>Riset</span></span></article>
+          <article class="division"><span class="no">04</span><div><h3 data-lang="en">Humanitarian Operations and Management</h3><h3 data-lang="id" hidden>Operasi dan Manajemen Kemanusiaan</h3><span class="coord">Zulfahmi Ramli, SE</span><span class="coord" data-lang="en">Member: Lilia Faridatul Fauziah, S.Tr., Keb., M.Gz</span><span class="coord" data-lang="id" hidden>Anggota: Lilia Faridatul Fauziah, S.Tr., Keb., M.Gz</span></div><span class="badge badge--humanitarian"><span data-lang="en">Humanitarian</span><span data-lang="id" hidden>Kemanusiaan</span></span></article>
+          <article class="division"><span class="no">05</span><div><h3 data-lang="en">Climate Change</h3><h3 data-lang="id" hidden>Perubahan Iklim</h3><span class="coord">Dr. Dea Tania Octarina, S.Si., M.Sc. <em data-lang="en">(based in Japan)</em><em data-lang="id" hidden>(berbasis di Jepang)</em></span><span class="coord" data-lang="en">Member: Mepsa Putra, S.Kep.Ns., M.Kep., Sp.Kep.K</span><span class="coord" data-lang="id" hidden>Anggota: Mepsa Putra, S.Kep.Ns., M.Kep., Sp.Kep.K</span></div><span class="badge badge--research"><span data-lang="en">Research</span><span data-lang="id" hidden>Riset</span></span></article>
         </div>
 
         <div class="ops-grid">
-          <div class="ops-card">
-            <h3>Divisi Administrasi</h3>
-            <p>Penatausahaan kesekretariatan dan koordinasi internal pusat studi.</p>
-            <p class="members"><b>Koordinator:</b> dr. Celine Basthomi<br><b>Anggota:</b> Hanim Nur Faizah, Hyan Oktodia Basuki</p>
-          </div>
-          <div class="ops-card">
-            <h3>Divisi Keuangan</h3>
-            <p>Pengelolaan keuangan yang transparan dan akuntabel.</p>
-            <p class="members"><b>Koordinator:</b> dr. Sri Ayu Alga Dewi<br><b>Anggota:</b> Eva Silviana Rahmawati</p>
-          </div>
+          <div class="ops-card"><h3 data-lang="en">Bureau of Administration</h3><h3 data-lang="id" hidden>Biro Administrasi</h3><p class="members"><b>dr. Celine Basthomi</b> — Hanim Nur Faizah, S.Kep.Ns., M.Kep; Hyan Oktodia Basuki, S.Kep.Ns., M.Kep</p></div>
+          <div class="ops-card"><h3 data-lang="en">Bureau of Finance</h3><h3 data-lang="id" hidden>Biro Keuangan</h3><p class="members"><b>dr. Sri Ayu Alga Dewi</b> — Eva Silviana Rahmawati, SST., M.Kes</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ KANTOR BERITA ═══ -->
+    <!-- ═══ PROGRAMS ═══ -->
+    <section class="section section--alt" id="program">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-lang="en">Programs</span><span class="eyebrow" data-lang="id" hidden>Program</span>
+          <h2 data-lang="en">Bridging research and humanitarian action</h2>
+          <h2 data-lang="id" hidden>Menjembatani riset dan aksi kemanusiaan</h2>
+          <p data-lang="en">Every IHSC program is designed to bridge research and humanitarian action — each activity leads to capacity, policy, or real response.</p>
+          <p data-lang="id" hidden>Program IHSC dirancang menjembatani riset dan aksi kemanusiaan — setiap kegiatan berujung pada kapasitas, kebijakan, atau respons nyata.</p>
+        </div>
+        <div class="focus-grid">
+          <div class="focus-item"><span class="no">01</span><h3 data-lang="en">Research &amp; Evidence</h3><h3 data-lang="id" hidden>Riset &amp; Bukti</h3><p data-lang="en">Studying priority humanitarian issues — health in conflict and displacement, ethics and humanitarian law, disaster risk and response, humanitarian operations, and climate change. Outputs: scientific publications, policy briefs, and databases for policymakers and practitioners.</p><p data-lang="id" hidden>Mengkaji isu kemanusiaan prioritas — kesehatan konflik dan pengungsi, etika dan hukum kemanusiaan, risiko dan respons bencana, operasi kemanusiaan, dan perubahan iklim. Luaran: publikasi ilmiah, policy brief, dan basis data untuk pengambil kebijakan dan praktisi.</p></div>
+          <div class="focus-item"><span class="no">02</span><h3 data-lang="en">Education &amp; Capacity Building</h3><h3 data-lang="id" hidden>Pendidikan &amp; Penguatan Kapasitas</h3><p data-lang="en">Certified training and courses: International Humanitarian Law (IHL), first aid and disaster preparedness, humanitarian operations management — for volunteers, health workers, academics, and the public.</p><p data-lang="id" hidden>Pelatihan dan kursus bersertifikat: Hukum Humaniter Internasional (IHL), pertolongan pertama dan kesiapsiagaan bencana, manajemen operasi kemanusiaan — bagi relawan, tenaga kesehatan, akademisi, dan masyarakat.</p></div>
+          <div class="focus-item"><span class="no">03</span><h3 data-lang="en">Policy Advocacy</h3><h3 data-lang="id" hidden>Advokasi Kebijakan</h3><p data-lang="en">Translating research findings into concrete and executable policy recommendations — together with government, international organizations, and civil society partners.</p><p data-lang="id" hidden>Menerjemahkan temuan riset menjadi rekomendasi kebijakan yang konkret dan dapat dieksekusi — bersama pemerintah, organisasi internasional, dan mitra sipil.</p></div>
+          <div class="focus-item"><span class="no">04</span><h3 data-lang="en">Humanitarian Response &amp; Community Resilience</h3><h3 data-lang="id" hidden>Respons Kemanusiaan &amp; Resiliensi Komunitas</h3><p data-lang="en">Building community preparedness and volunteer networks that stand ready — trained in peacetime, effective in crises.</p><p data-lang="id" hidden>Membangun kesiapsiagaan komunitas dan jejaring relawan yang siap siaga — terlatih saat damai, efektif saat krisis.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ NEWS PREVIEW ═══ -->
     <section class="section" id="berita">
       <div class="container">
         <div class="news-head-row">
           <div class="section-head">
-            <span class="eyebrow">Kantor Berita</span>
-            <h2>Kabar IHSC <span class="draft-ribbon">Contoh</span></h2>
-            <p>Perkembangan kajian, kegiatan, dan pernyataan sikap IHSC. Kartu di bawah contoh format — artikel asli menyusul.</p>
+            <span class="eyebrow" data-lang="en">News Desk</span><span class="eyebrow" data-lang="id" hidden>Kantor Berita</span>
+            <h2 data-lang="en">News from IHSC</h2><h2 data-lang="id" hidden>Kabar IHSC</h2>
+            <p data-lang="en">News on IHSC research and activities — humanitarian literacy for Indonesian and global audiences.</p>
+            <p data-lang="id" hidden>Warta kajian dan kegiatan IHSC — literasi kemanusiaan untuk publik Indonesia dan dunia.</p>
           </div>
-          <a class="news-link" href="berita/index.html">Kunjungi Kantor Berita</a>
+          <a class="news-link" href="berita/index.html" data-lang="en">Visit the News Desk</a><a class="news-link" href="berita/index.html" data-lang="id" hidden>Kunjungi Kantor Berita</a>
         </div>
-
         <div class="news-grid">
           <a class="news-card" href="berita/artikel/artikel-001.html">
-            <div class="card-kicker"><span class="badge badge--featured">Kabar</span><span class="date">· Draft</span></div>
-            <h3>Contoh Artikel: Kerangka Awal Pusat Studi Kemanusiaan Indonesia</h3>
-            <p>Template artikel standar IHSC — struktur, gaya, dan elemen wajib untuk setiap tulisan yang terbit.</p>
-            <span class="card-more">Baca</span>
+            <div class="card-kicker"><span class="badge badge--featured"><span data-lang="en">News</span><span data-lang="id" hidden>Kabar</span></span></div>
+            <h3 data-lang="en">The Inaugural Plenary: IHSC Begins Its Work</h3><h3 data-lang="id" hidden>Pleno Perdana: IHSC Memulai Kerjanya</h3>
+            <p data-lang="en">Read the full account of IHSC's first plenary session held on 5 June 2026.</p><p data-lang="id" hidden>Laporan lengkap pleno perdana IHSC pada 5 Juni 2026.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
           <a class="news-card" href="berita/index.html">
-            <div class="card-kicker"><span class="badge badge--research">Riset</span><span class="date">· Menyusul</span></div>
-            <h3>Kajian Prioritas: Kesiapsiagaan &amp; Pertolongan Pertama Berbasis Masyarakat</h3>
-            <p>Peta awal program riset IHSC — menunggu arahan Direktur sebelum dikerjakan.</p>
-            <span class="card-more">Baca</span>
+            <div class="card-kicker"><span class="badge badge--research"><span data-lang="en">Research</span><span data-lang="id" hidden>Riset</span></span></div>
+            <h3 data-lang="en">Priority Study: Community-Based Preparedness and First Aid</h3><h3 data-lang="id" hidden>Kajian Prioritas: Kesiapsiagaan &amp; Pertolongan Pertama Berbasis Masyarakat</h3>
+            <p data-lang="en">Initial mapping of IHSC's research program on community resilience.</p><p data-lang="id" hidden>Peta awal program riset IHSC tentang resiliensi komunitas.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
           <a class="news-card" href="berita/index.html">
-            <div class="card-kicker"><span class="badge badge--humanitarian">Kemanusiaan</span><span class="date">· Menyusul</span></div>
-            <h3>Rencana Peluncuran IHSC: Menuju Ruang Kajian Kemanusiaan yang Terbuka</h3>
-            <p>Garis besar agenda publikasi, pelatihan, dan jejaring pasca-pleno perdana 5 Juni 2026.</p>
-            <span class="card-more">Baca</span>
+            <div class="card-kicker"><span class="badge badge--humanitarian"><span data-lang="en">Humanitarian</span><span data-lang="id" hidden>Kemanusiaan</span></span></div>
+            <h3 data-lang="en">IHSC Launch Plan: Toward an Open Humanitarian Research Space</h3><h3 data-lang="id" hidden>Rencana Peluncuran IHSC: Menuju Ruang Kajian Kemanusiaan yang Terbuka</h3>
+            <p data-lang="en">Outline of the publication, training, and network agenda following the inaugural plenary.</p><p data-lang="id" hidden>Garis besar agenda publikasi, pelatihan, dan jejaring pasca-pleno perdana.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ═══ KONTAK ═══ -->
-    <section class="section" id="kontak">
+    <!-- ═══ CONTACT ═══ -->
+    <section class="section section--alt" id="kontak">
       <div class="container">
         <div class="cta-inner">
           <div>
-            <span class="eyebrow">Kontak</span>
-            <h2>Tertarik berkolaborasi dengan IHSC?</h2>
-            <p>
-              Mitra riset, organisasi kemanusiaan, akademisi, atau pembuat
-              kebijakan — kami terbuka untuk bekerja sama. Detail kontak di
-              bawah masih placeholder dan akan diperbarui.
-            </p>
+            <span class="eyebrow" data-lang="en">Contact</span><span class="eyebrow" data-lang="id" hidden>Kontak</span>
+            <h2 data-lang="en">Interested in collaborating with IHSC?</h2><h2 data-lang="id" hidden>Tertarik berkolaborasi dengan IHSC?</h2>
+            <p data-lang="en">Research partners, humanitarian organizations, academics, or policymakers — we are open to working together.</p>
+            <p data-lang="id" hidden>Mitra riset, organisasi kemanusiaan, akademisi, atau pembuat kebijakan — kami terbuka untuk bekerja sama.</p>
           </div>
           <div class="cta-channels">
-            <a class="cta-channel" href="mailto:halo@ihsc.example">
-              <span>
-                <span class="label">Email</span>
-                <span class="value">halo@ihsc.example (draft)</span>
-              </span>
-              <span class="arrow">→</span>
-            </a>
-            <a class="cta-channel" href="https://iiknutuban.ac.id" target="_blank" rel="noopener">
-              <span>
-                <span class="label">Kampus</span>
-                <span class="value">IIK Nahdlatul Ulama Tuban</span>
-              </span>
-              <span class="arrow">→</span>
-            </a>
-            <a class="cta-channel" href="#kontak">
-              <span>
-                <span class="label">WhatsApp / Telegram</span>
-                <span class="value">Nomor menyusul</span>
-              </span>
-              <span class="arrow">→</span>
-            </a>
+            <a class="cta-channel" href="mailto:ihsc@iiknutuban.ac.id"><span><span class="label" data-lang="en">Email</span><span class="label" data-lang="id" hidden>Email</span><span class="value">ihsc@iiknutuban.ac.id</span></span><span class="arrow">→</span></a>
+            <a class="cta-channel" href="https://wa.me/6282120919290" target="_blank" rel="noopener"><span><span class="label" data-lang="en">WhatsApp</span><span class="label" data-lang="id" hidden>WhatsApp</span><span class="value" data-lang="en">Chat via WhatsApp</span><span class="value" data-lang="id" hidden>Chat via WhatsApp</span></span><span class="arrow">→</span></a>
+            <a class="cta-channel" href="https://iiknutuban.ac.id" target="_blank" rel="noopener"><span><span class="label" data-lang="en">Campus</span><span class="label" data-lang="id" hidden>Kampus</span><span class="value" data-lang="en">IIK NU Tuban, Jl. KH. Hasyim Asyhari No. 26, Tuban</span><span class="value" data-lang="id" hidden>IIK NU Tuban, Jl. KH. Hasyim Asyhari No. 26, Tuban</span></span><span class="arrow">→</span></a>
           </div>
         </div>
       </div>
@@ -293,41 +238,60 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-about">
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true">IHSC</span>
-            <span class="brand-text">
-              <span class="brand-name">Indonesian Humanitarian Study Center</span>
-              <span class="brand-sub">Pusat Studi Kemanusiaan · IIK NU Tuban</span>
-            </span>
-          </a>
-          <p>Pusat Studi Kemanusiaan di bawah IIK Nahdlatul Ulama Tuban — kajian, pendidikan, dan advokasi kemanusiaan yang berakar di Nusantara.</p>
+          <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.png" alt="IHSC logo" width="48" height="48"><span class="brand-text"><span class="brand-name">IHSC</span><span class="brand-sub" data-lang="en">Humanitarian Study Center · IIK NU Tuban</span><span class="brand-sub" data-lang="id" hidden>Pusat Studi Kemanusiaan · IIK NU Tuban</span></span></a>
+          <p data-lang="en">Humanitarian Study Center under IIK NU Tuban — humanitarian research and advocacy rooted in the Nusantara.</p><p data-lang="id" hidden>Pusat Studi Kemanusiaan di bawah IIK NU Tuban — kajian dan advokasi kemanusiaan yang berakar di Nusantara.</p>
         </div>
         <div class="footer-col">
-          <h4>Jelajahi</h4>
+          <h4 data-lang="en">Explore</h4><h4 data-lang="id" hidden>Jelajahi</h4>
           <ul>
-            <li><a href="#tentang">Tentang IHSC</a></li>
-            <li><a href="#struktur">Struktur</a></li>
-            <li><a href="berita/index.html">Kantor Berita</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#tentang" data-lang="en">About IHSC</a><a href="#tentang" data-lang="id" hidden>Tentang IHSC</a></li>
+            <li><a href="#visi-misi" data-lang="en">Vision &amp; Mission</a><a href="#visi-misi" data-lang="id" hidden>Visi &amp; Misi</a></li>
+            <li><a href="#bidang" data-lang="en">Divisions</a><a href="#bidang" data-lang="id" hidden>Bidang</a></li>
+            <li><a href="berita/index.html" data-lang="en">News Desk</a><a href="berita/index.html" data-lang="id" hidden>Kantor Berita</a></li>
+            <li><a href="#kontak" data-lang="en">Contact</a><a href="#kontak" data-lang="id" hidden>Kontak</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Kontak</h4>
+          <h4 data-lang="en">Contact</h4><h4 data-lang="id" hidden>Kontak</h4>
           <ul>
-            <li><a href="mailto:halo@ihsc.example">halo@ihsc.example (draft)</a></li>
+            <li><a href="mailto:ihsc@iiknutuban.ac.id">ihsc@iiknutuban.ac.id</a></li>
+            <li><a href="https://wa.me/6282120919290" target="_blank" rel="noopener" data-lang="en">WhatsApp +62 821-2091-9290</a><a href="https://wa.me/6282120919290" target="_blank" rel="noopener" data-lang="id" hidden>WhatsApp +62 821-2091-9290</a></li>
             <li><a href="https://iiknutuban.ac.id" target="_blank" rel="noopener">iiknutuban.ac.id</a></li>
-            <li><a href="#kontak">WhatsApp / Telegram</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 IHSC — Indonesian Humanitarian Study Center, IIK NU Tuban</span>
-        <span>Konsep · Draft untuk review</span>
-      </div>
+      <div class="footer-bottom"><span>© 2026 IHSC — Indonesian Humanitarian Study Center, IIK NU Tuban</span></div>
     </div>
   </footer>
 
+  <!-- ═══ WA FLOATING BUTTON ═══ -->
+  <a class="wa-float" href="https://wa.me/6282120919290" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label" data-lang="en">Chat via WhatsApp</span>
+    <span class="wa-label" data-lang="id" hidden>Chat via WhatsApp</span>
+  </a>
+
   <script>
+    // ═══ language toggle ═══
+    const TITLES = { en: 'IHSC — Indonesian Humanitarian Study Center', id: 'IHSC — Indonesian Humanitarian Study Center' };
+    const META_DESC = { en: 'IHSC — Humanitarian Study Center under IIK NU Tuban.', id: 'IHSC — Pusat Studi Kemanusiaan, IIK NU Tuban.' };
+    function setLang(l) {
+      const lang = (l === 'id') ? 'id' : 'en';
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang]').forEach(el => { el.hidden = el.dataset.lang !== lang; });
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        const active = b.dataset.setlang === lang;
+        b.classList.toggle('lang-btn--active', active);
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.title = TITLES[lang];
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', META_DESC[lang]);
+      try { localStorage.setItem('ihsc-lang', lang); } catch (e) {}
+    }
+    document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setlang)));
+
+    // ═══ mobile nav ═══
     const toggle = document.getElementById('navToggle');
     const nav = document.getElementById('mainNav');
     if (toggle && nav) {
@@ -336,12 +300,12 @@
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         toggle.textContent = open ? '✕' : '☰';
       });
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = '☰';
-      }));
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = '☰'; }));
     }
+
+    let saved = 'en';
+    try { saved = localStorage.getItem('ihsc-lang') || 'en'; } catch (e) {}
+    setLang(saved);
   </script>
 </body>
 </html>

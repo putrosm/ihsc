@@ -26,7 +26,7 @@ jobs:
           mapfile -t FILES < <(find . -type f \
               ! -path './.git/*' ! -path './.github/*' \
               ! -name 'README.md' ! -name '.gitignore' \
-              ! -name 'NARASI-*' \
+              ! -name 'NARASI-*' ! -name 'REFERENSI-*' \
               -printf '%P\n')
 
           # buat hirarki folder (MKCOL; abaikan kalau sudah ada)

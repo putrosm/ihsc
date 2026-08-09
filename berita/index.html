@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kantor Berita IHSC — kabar kajian, kegiatan, dan pernyataan sikap Indonesian Humanitarian Study Center.">
-  <meta property="og:title" content="Kantor Berita — IHSC">
+  <meta name="description" content="IHSC News Desk — news on research and activities of the Indonesian Humanitarian Study Center.">
+  <meta property="og:title" content="News Desk — IHSC">
   <meta property="og:type" content="website">
-  <title>Kantor Berita — IHSC</title>
+  <title>News Desk — IHSC</title>
   <link rel="icon" type="image/png" href="../assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/ihsc.css?v=2">
+  <link rel="stylesheet" href="../assets/ihsc.css?v=4">
 </head>
 <body>
-  <a class="skip-link" href="#konten">Langsung ke konten</a>
+  <a class="skip-link" href="#konten">Skip to content / Langsung ke konten</a>
 
   <!-- ═══ HEADER ═══ -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="../index.html" aria-label="IHSC — beranda">
-        <img class="brand-logo" src="../assets/logo.png" alt="Logo IHSC" width="48" height="48">
+      <a class="brand" href="../index.html" aria-label="IHSC — home">
+        <img class="brand-logo" src="../assets/logo.png" alt="IHSC logo" width="48" height="48">
         <span class="brand-text">
           <span class="brand-name">Indonesian Humanitarian Study Center</span>
-          <span class="brand-sub">Pusat Studi Kemanusiaan · IIK NU Tuban</span>
+          <span class="brand-sub" data-lang="en">Humanitarian Study Center · IIK NU Tuban</span>
+          <span class="brand-sub" data-lang="id" hidden>Pusat Studi Kemanusiaan · IIK NU Tuban</span>
         </span>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Buka menu">
-        ☰
-      </button>
-
-      <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
         <ul>
-          <li><a href="../index.html#tentang">Tentang</a></li>
-          <li><a href="../index.html#pilar">Pilar Kajian</a></li>
-          <li><a href="index.html" aria-current="page">Kantor Berita</a></li>
-          <li><a href="../index.html#kontak">Kontak</a></li>
-          <li class="nav-cta"><a href="../index.html#kontak">Gabung Jejaring</a></li>
+          <li><a href="../index.html#tentang" data-lang="en">About</a><a href="../index.html#tentang" data-lang="id" hidden>Tentang</a></li>
+          <li><a href="../index.html#visi-misi" data-lang="en">Vision &amp; Mission</a><a href="../index.html#visi-misi" data-lang="id" hidden>Visi &amp; Misi</a></li>
+          <li><a href="../index.html#bidang" data-lang="en">Divisions</a><a href="../index.html#bidang" data-lang="id" hidden>Bidang</a></li>
+          <li><a href="../index.html#program" data-lang="en">Programs</a><a href="../index.html#program" data-lang="id" hidden>Program</a></li>
+          <li><a href="index.html" aria-current="page" data-lang="en">News Desk</a><a href="index.html" aria-current="page" data-lang="id" hidden>Kantor Berita</a></li>
+          <li><a href="../index.html#kontak" data-lang="en">Contact</a><a href="../index.html#kontak" data-lang="id" hidden>Kontak</a></li>
+          <li class="nav-cta"><a href="../index.html#kontak" data-lang="en">Contact Us</a><a href="../index.html#kontak" data-lang="id" hidden>Hubungi Kami</a></li>
         </ul>
+        <div class="lang-toggle" role="group" aria-label="Language / Bahasa">
+          <button type="button" class="lang-btn" data-setlang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-setlang="id" aria-pressed="false">ID</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -47,65 +50,86 @@
     <!-- ═══ PAGE HEAD ═══ -->
     <section class="page-head">
       <div class="container">
-        <a class="back-link" href="../index.html">Beranda</a>
-        <span class="eyebrow">Kantor Berita</span>
-        <h1>Kabar IHSC <span class="draft-ribbon">Konsep</span></h1>
-        <p class="sub">
-          Perkembangan kajian, kegiatan, dan pernyataan sikap
-          Indonesian Humanitarian Study Center. Halaman ini masih konsep — kartu di bawah
-          adalah contoh format, bukan artikel terbit.
-        </p>
+        <a class="back-link" href="../index.html" data-lang="en">Home</a><a class="back-link" href="../index.html" data-lang="id" hidden>Beranda</a>
+        <span class="eyebrow" data-lang="en">News Desk</span><span class="eyebrow" data-lang="id" hidden>Kantor Berita</span>
+        <h1 data-lang="en">News from IHSC</h1><h1 data-lang="id" hidden>Kabar IHSC</h1>
+        <p class="sub" data-lang="en">News on IHSC research and activities — humanitarian literacy for Indonesian and global audiences.</p>
+        <p class="sub" data-lang="id" hidden>Warta kajian dan kegiatan IHSC — literasi kemanusiaan untuk publik Indonesia dan dunia.</p>
       </div>
     </section>
 
-    <!-- ═══ GRID BERITA ═══ -->
+    <!-- ═══ SEARCH + GRID ═══ -->
     <section class="news-section">
       <div class="container">
-        <div class="news-page-grid">
+        <!-- search bar -->
+        <form class="search-bar" role="search" onsubmit="return false">
+          <input type="search" id="newsSearch" placeholder="Search articles…">
+          <button type="button" onclick="document.getElementById('newsSearch').dispatchEvent(new Event('input'))" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+        </form>
+
+        <!-- hasil pencarian -->
+        <p id="searchInfo" style="font-size:14px; color:var(--color-text-muted); margin:-16px 0 20px" hidden></p>
+
+        <div class="news-page-grid" id="newsGrid">
           <a class="news-card" href="artikel/artikel-001.html">
-            <div class="card-kicker"><span class="badge badge--featured">Kabar</span><span class="date">· Draft</span></div>
-            <h3>Contoh Artikel: Kerangka Awal Pusat Studi Kemanusiaan Indonesia</h3>
-            <p>Template artikel standar IHSC — struktur, gaya, dan elemen wajib untuk setiap tulisan yang terbit.</p>
-            <span class="card-more">Baca</span>
+            <div class="card-kicker"><span class="badge badge--featured" data-lang="en">News</span><span class="badge badge--featured" data-lang="id" hidden>Kabar</span></div>
+            <h3 data-lang="en">The Inaugural Plenary: IHSC Begins Its Work</h3><h3 data-lang="id" hidden>Pleno Perdana: IHSC Memulai Kerjanya</h3>
+            <p data-lang="en">Read the full account of IHSC's first plenary session held on 5 June 2026.</p><p data-lang="id" hidden>Laporan lengkap pleno perdana IHSC pada 5 Juni 2026.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
-          <a class="news-card" href="index.html">
-            <div class="card-kicker"><span class="badge badge--research">Riset</span><span class="date">· Menyusul</span></div>
-            <h3>Kajian Prioritas: Kesiapsiagaan &amp; Pertolongan Pertama Berbasis Masyarakat</h3>
-            <p>Peta awal program riset IHSC — menunggu arahan Direktur sebelum dikerjakan.</p>
-            <span class="card-more">Baca</span>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--research" data-lang="en">Research</span><span class="badge badge--research" data-lang="id" hidden>Riset</span></div>
+            <h3 data-lang="en">Priority Study: Community-Based Preparedness and First Aid</h3><h3 data-lang="id" hidden>Kajian Prioritas: Kesiapsiagaan dan Pertolongan Pertama Berbasis Masyarakat</h3>
+            <p data-lang="en">Initial mapping of IHSC's research program on community resilience.</p><p data-lang="id" hidden>Peta awal program riset IHSC tentang resiliensi komunitas.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
-          <a class="news-card" href="index.html">
-            <div class="card-kicker"><span class="badge badge--humanitarian">Kemanusiaan</span><span class="date">· Menyusul</span></div>
-            <h3>Rencana Peluncuran IHSC: Menuju Ruang Kajian Kemanusiaan yang Terbuka</h3>
-            <p>Garis besar agenda publikasi, pelatihan, dan jejaring saat IHSC resmi berjalan.</p>
-            <span class="card-more">Baca</span>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--humanitarian" data-lang="en">Humanitarian</span><span class="badge badge--humanitarian" data-lang="id" hidden>Kemanusiaan</span></div>
+            <h3 data-lang="en">IHSC Launch Plan: Toward an Open Humanitarian Research Space</h3><h3 data-lang="id" hidden>Rencana Peluncuran IHSC: Menuju Ruang Kajian Kemanusiaan yang Terbuka</h3>
+            <p data-lang="en">Outline of the publication, training, and network agenda following the inaugural plenary.</p><p data-lang="id" hidden>Garis besar agenda publikasi, pelatihan, dan jejaring pasca-pleno perdana.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
-          <a class="news-card" href="index.html">
-            <div class="card-kicker"><span class="badge badge--policy">Kebijakan</span><span class="date">· Menyusul</span></div>
-            <h3>Kebijakan Kesiapsiagaan: Celah yang Bisa Diisi Dunia Akademik</h3>
-            <p>Bahan awal diskusi — belum ditulis, slot tersedia di grid ini.</p>
-            <span class="card-more">Baca</span>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--policy" data-lang="en">Policy</span><span class="badge badge--policy" data-lang="id" hidden>Kebijakan</span></div>
+            <h3 data-lang="en">Preparedness Policy: A Gap the Academic World Can Fill</h3><h3 data-lang="id" hidden>Kebijakan Kesiapsiagaan: Celah yang Bisa Diisi Dunia Akademik</h3>
+            <p data-lang="en">How IHSC research can inform national preparedness policy.</p><p data-lang="id" hidden>Bagaimana riset IHSC dapat memberi masukan bagi kebijakan kesiapsiagaan nasional.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
-          <a class="news-card" href="index.html">
-            <div class="card-kicker"><span class="badge badge--research">Riset</span><span class="date">· Menyusul</span></div>
-            <h3>Literasi Kemanusiaan: Apa yang Sebaiknya Dipahami Setiap Warga</h3>
-            <p>Rencana serial edukasi publik — menunggu kurator konten.</p>
-            <span class="card-more">Baca</span>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--research" data-lang="en">Research</span><span class="badge badge--research" data-lang="id" hidden>Riset</span></div>
+            <h3 data-lang="en">Humanitarian Literacy: What Every Citizen Should Understand</h3><h3 data-lang="id" hidden>Literasi Kemanusiaan: yang Sebaiknya Dipahami Warga</h3>
+            <p data-lang="en">A public education series on the fundamentals of humanitarianism.</p><p data-lang="id" hidden>Serial edukasi publik tentang dasar-dasar kemanusiaan.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
-          <a class="news-card" href="index.html">
-            <div class="card-kicker"><span class="badge badge--humanitarian">Kemanusiaan</span><span class="date">· Menyusul</span></div>
-            <h3>Peta Mitra: Organisasi Kemanusiaan yang Bisa Diajak Berkolaborasi</h3>
-            <p>Draft pemetaan jejaring — akan diperbarui saat kemitraan dimulai.</p>
-            <span class="card-more">Baca</span>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--humanitarian" data-lang="en">Humanitarian</span><span class="badge badge--humanitarian" data-lang="id" hidden>Kemanusiaan</span></div>
+            <h3 data-lang="en">Partner Map: Humanitarian Organizations to Collaborate With</h3><h3 data-lang="id" hidden>Peta Mitra: Organisasi Kemanusiaan yang Bisa Diajak Berkolaborasi</h3>
+            <p data-lang="en">A mapping of potential partnerships.</p><p data-lang="id" hidden>Pemetaan kemitraan potensial.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
+          </a>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--emergency" data-lang="en">Emergency</span><span class="badge badge--emergency" data-lang="id" hidden>Darurat</span></div>
+            <h3 data-lang="en">Disaster Response: Lessons from Indonesian Communities</h3><h3 data-lang="id" hidden>Respons Bencana: Pelajaran dari Komunitas Indonesia</h3>
+            <p data-lang="en">What decades of community-based response teach us about preparedness.</p><p data-lang="id" hidden>yang dapat dipelajari dari respons berbasis komunitas selama puluhan tahun.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
+          </a>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--policy" data-lang="en">Policy</span><span class="badge badge--policy" data-lang="id" hidden>Kebijakan</span></div>
+            <h3 data-lang="en">Integrating Islamic Perspectives into the Global Humanitarian System</h3><h3 data-lang="id" hidden>Mengintegrasikan Perspektif Keislaman dalam Sistem Kemanusiaan Global</h3>
+            <p data-lang="en">How Islamic principles enrich international humanitarian norms.</p><p data-lang="id" hidden>Bagaimana prinsip keislaman memperkaya norma kemanusiaan internasional.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
+          </a>
+          <a class="news-card" href="artikel/artikel-001.html">
+            <div class="card-kicker"><span class="badge badge--research" data-lang="en">Research</span><span class="badge badge--research" data-lang="id" hidden>Riset</span></div>
+            <h3 data-lang="en">Climate Change and Human Health: A Research Agenda</h3><h3 data-lang="id" hidden>Perubahan Iklim dan Kesehatan Manusia: Agenda Riset</h3>
+            <p data-lang="en">The IHSC Climate Change field outlines its research priorities.</p><p data-lang="id" hidden>Bidang Perubahan Iklim IHSC memaparkan prioritas risetnya.</p>
+            <span class="card-more" data-lang="en">Read</span><span class="card-more" data-lang="id" hidden>Baca</span>
           </a>
         </div>
 
-        <div class="note-box">
-          <strong>Catatan teknis (untuk Prinsipal):</strong> kartu baru ditambahkan dengan menyalin blok
-          <code>&lt;a class="news-card"&gt;…&lt;/a&gt;</code> lalu menyisipkannya paling atas grid
-          <code>&lt;div class="news-page-grid"&gt;</code>. Artikel ditulis sebagai file HTML sendiri di folder
-          <code>berita/artikel/</code>, berpola seperti <code>artikel-001.html</code>.
-        </div>
+        <div id="pagination" class="pagination"></div>
       </div>
     </section>
   </main>
@@ -115,41 +139,61 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-about">
-          <a class="brand" href="../index.html">
-            <span class="brand-mark" aria-hidden="true">IHSC</span>
-            <span class="brand-text">
-              <span class="brand-name">Indonesian Humanitarian Study Center</span>
-              <span class="brand-sub">Pusat Studi Kemanusiaan · IIK NU Tuban</span>
-            </span>
-          </a>
-          <p>Ruang kajian, pendidikan, advokasi, dan aksi kemanusiaan Indonesia — berbasis bukti, berorientasi aksi.</p>
+          <a class="brand" href="../index.html"><img class="brand-logo" src="../assets/logo.png" alt="IHSC logo" width="48" height="48"><span class="brand-text"><span class="brand-name">IHSC</span><span class="brand-sub" data-lang="en">Humanitarian Study Center · IIK NU Tuban</span><span class="brand-sub" data-lang="id" hidden>Pusat Studi Kemanusiaan · IIK NU Tuban</span></span></a>
+          <p data-lang="en">Humanitarian Study Center under IIK NU Tuban — humanitarian research and advocacy rooted in the Nusantara.</p><p data-lang="id" hidden>Pusat Studi Kemanusiaan di bawah IIK NU Tuban — kajian dan advokasi kemanusiaan yang berakar di Nusantara.</p>
         </div>
         <div class="footer-col">
-          <h4>Jelajahi</h4>
+          <h4 data-lang="en">Explore</h4><h4 data-lang="id" hidden>Jelajahi</h4>
           <ul>
-            <li><a href="../index.html#tentang">Tentang IHSC</a></li>
-            <li><a href="../index.html#pilar">Pilar Kajian</a></li>
-            <li><a href="index.html">Kantor Berita</a></li>
-            <li><a href="../index.html#kontak">Kontak</a></li>
+            <li><a href="../index.html#tentang" data-lang="en">About IHSC</a><a href="../index.html#tentang" data-lang="id" hidden>Tentang IHSC</a></li>
+            <li><a href="../index.html#visi-misi" data-lang="en">Vision &amp; Mission</a><a href="../index.html#visi-misi" data-lang="id" hidden>Visi &amp; Misi</a></li>
+            <li><a href="../index.html#bidang" data-lang="en">Divisions</a><a href="../index.html#bidang" data-lang="id" hidden>Bidang</a></li>
+            <li><a href="index.html" data-lang="en">News Desk</a><a href="index.html" data-lang="id" hidden>Kantor Berita</a></li>
+            <li><a href="../index.html#kontak" data-lang="en">Contact</a><a href="../index.html#kontak" data-lang="id" hidden>Kontak</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Kontak</h4>
+          <h4 data-lang="en">Contact</h4><h4 data-lang="id" hidden>Kontak</h4>
           <ul>
-            <li><a href="mailto:halo@ihsc.example">halo@ihsc.example (draft)</a></li>
-            <li><a href="../index.html#kontak">WhatsApp / Telegram</a></li>
-            <li><a href="../index.html#kontak">Media sosial</a></li>
+            <li><a href="mailto:ihsc@iiknutuban.ac.id">ihsc@iiknutuban.ac.id</a></li>
+            <li><a href="https://wa.me/6282120919290" target="_blank" rel="noopener">WhatsApp +62 821-2091-9290</a></li>
+            <li><a href="https://iiknutuban.ac.id" target="_blank" rel="noopener">iiknutuban.ac.id</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>© 2026 IHSC — Indonesian Humanitarian Study Center</span>
-        <span>Konsep · Draft untuk review</span>
-      </div>
+      <div class="footer-bottom"><span>© 2026 IHSC — Indonesian Humanitarian Study Center, IIK NU Tuban</span></div>
     </div>
   </footer>
 
+  <!-- ═══ WA FLOATING BUTTON ═══ -->
+  <a class="wa-float" href="https://wa.me/6282120919290" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label" data-lang="en">Chat via WhatsApp</span>
+    <span class="wa-label" data-lang="id" hidden>Chat via WhatsApp</span>
+  </a>
+
   <script>
+    // ═══ language toggle ═══
+    const TITLES = { en: 'News Desk — IHSC', id: 'Kantor Berita — IHSC' };
+    const META_DESC = { en: 'News on research and activities of IHSC.', id: 'Warta kajian dan kegiatan IHSC.' };
+    function setLang(l) {
+      const lang = (l === 'id') ? 'id' : 'en';
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang]').forEach(el => { el.hidden = el.dataset.lang !== lang; });
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        const active = b.dataset.setlang === lang;
+        b.classList.toggle('lang-btn--active', active);
+        b.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.title = TITLES[lang];
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', META_DESC[lang]);
+      try { localStorage.setItem('ihsc-lang', lang); } catch (e) {}
+      renderPagination();
+    }
+    document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setlang)));
+
+    // ═══ mobile nav ═══
     const toggle = document.getElementById('navToggle');
     const nav = document.getElementById('mainNav');
     if (toggle && nav) {
@@ -158,12 +202,84 @@
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         toggle.textContent = open ? '✕' : '☰';
       });
-      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = '☰';
-      }));
+      nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); toggle.textContent = '☰'; }));
     }
+
+    // ═══ search + pagination ═══
+    const CARDS_PER_PAGE = 6;
+    const grid = document.getElementById('newsGrid');
+    const cards = Array.from(grid.querySelectorAll('.news-card'));
+    const pagination = document.getElementById('pagination');
+    const searchInput = document.getElementById('newsSearch');
+    const searchInfo = document.getElementById('searchInfo');
+    let currentPage = 1;
+
+    function getFilteredCards() {
+      const q = searchInput.value.toLowerCase().trim();
+      if (!q) return cards;
+      return cards.filter(c => {
+        const visibleEls = c.querySelectorAll('[data-lang]');
+        const visibleText = Array.from(visibleEls)
+          .filter(el => !el.hidden)
+          .map(el => el.textContent)
+          .join(' ').toLowerCase();
+        return visibleText.includes(q);
+      });
+    }
+
+    function renderPagination() {
+      const filtered = getFilteredCards();
+      const totalPages = Math.ceil(filtered.length / CARDS_PER_PAGE) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      // sembunyikan semua kartu, tampilkan halaman saat ini
+      cards.forEach(c => { c.style.display = 'none'; });
+      const start = (currentPage - 1) * CARDS_PER_PAGE;
+      filtered.slice(start, start + CARDS_PER_PAGE).forEach(c => { c.style.display = ''; });
+
+      // info pencarian
+      if (searchInput.value.trim()) {
+        searchInfo.hidden = false;
+        searchInfo.textContent = `${filtered.length} article${filtered.length !== 1 ? 's' : ''} found — showing page ${currentPage} of ${totalPages}`;
+      } else {
+        if (cards.length <= CARDS_PER_PAGE) { searchInfo.hidden = true; }
+      }
+
+      // tombol pagination
+      if (totalPages <= 1) { pagination.innerHTML = ''; return; }
+      let html = '';
+      html += `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goTo(${currentPage - 1})" aria-label="Previous page">&laquo;</button>`;
+      for (let p = 1; p <= totalPages; p++) {
+        if (totalPages > 7 && p > 2 && p < currentPage - 1) {
+          if (p === 3) html += '<button class="pagination__ellipsis" disabled>&hellip;</button>';
+          continue;
+        }
+        if (totalPages > 7 && p > currentPage + 1 && p < totalPages - 1) {
+          if (p === totalPages - 2) html += '<button class="pagination__ellipsis" disabled>&hellip;</button>';
+          continue;
+        }
+        html += `<button class="${p === currentPage ? 'pg-active' : ''}" onclick="goTo(${p})">${p}</button>`;
+      }
+      html += `<button ${currentPage === totalPages ? 'disabled' : ''} onclick="goTo(${currentPage + 1})" aria-label="Next page">&raquo;</button>`;
+      pagination.innerHTML = html;
+    }
+
+    function goTo(page) {
+      const filtered = getFilteredCards();
+      const totalPages = Math.ceil(filtered.length / CARDS_PER_PAGE) || 1;
+      currentPage = Math.max(1, Math.min(page, totalPages));
+      renderPagination();
+      window.scrollTo({ top: document.getElementById('newsGrid').offsetTop - 100, behavior: 'smooth' });
+    }
+    window.goTo = goTo;
+
+    searchInput.addEventListener('input', () => { currentPage = 1; renderPagination(); });
+    window.addEventListener('DOMContentLoaded', renderPagination);
+
+    let saved = 'en';
+    try { saved = localStorage.getItem('ihsc-lang') || 'en'; } catch (e) {}
+    setLang(saved);
+    renderPagination();
   </script>
 </body>
 </html>
