@@ -37,13 +37,13 @@ jobs:
             IFS='/' read -ra parts <<< "$dir"
             for p in "${parts[@]}"; do
               cur="${cur}/${p}"
-              curl -sf -o /dev/null -u "$AUTH" -X MKCOL "$BASE${cur}/" || true
+              curl -sSk -o /dev/null -u "$AUTH" --max-time 30 -X MKCOL "$BASE${cur}/" || true
             done
           done
 
           # upload semua file
           for f in "${FILES[@]}"; do
-            curl -sf -o /dev/null -u "$AUTH" -T "$f" "$BASE/$f" || { echo "GAGAL upload: $f"; exit 1; }
+            curl -sSk -o /dev/null -u "$AUTH" --max-time 120 --retry 2 -T "$f" "$BASE/$f" || { echo "GAGAL upload: $f"; exit 1; }
             echo "ok: $f"
           done
 
