@@ -36,3 +36,9 @@ Secrets yang dibutuhkan (sudah di-set di repo):
 2. Sisipkan kartu baru paling atas grid di `berita/index.html`
    (blok `<a class="news-card">…</a>`).
 3. Push — otomatis tayang.
+
+## TODO (jangan dikerjakan dulu)
+
+- Foto-foto pengurus akan menyusul; layout foto belum diputuskan Prinsipal.
+  **Jangan edit layout web untuk foto sebelum ada arahan.**
+
