@@ -464,12 +464,15 @@ p { max-width: 68ch; }
   .footer-top { grid-template-columns: 1fr; }
   .brand-sub { display: none; }
   .brand-name { font-size: 16px; }
-  .brand { max-width: 200px; }
+  .brand { max-width: 170px; }
   .brand-logo { width: 38px; height: 38px; }
   .header-top { gap: 10px; }
   .header-right { gap: 6px; }
-  .nav-cta a { padding: 8px 14px; font-size: 13px; }
+  /* CTA "Contact Us" disembunyikan di HP — header muat di layar kecil; kontak tetap ada di nav & footer */
+  .nav-cta { display: none; }
   .lang-btn { padding: 6px 10px; font-size: 11px; }
+  /* Panel PROFILE: susun vertikal supaya teks & tanggal tidak tumpang tindih di layar sempit */
+  .panel-list div { flex-direction: column; align-items: flex-start; gap: 4px; }
   .division { grid-template-columns: 1fr; gap: 12px; }
 }
 
