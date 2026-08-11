@@ -288,6 +288,16 @@ p { max-width: 68ch; }
 .card-more { margin-top: auto; font-weight: 600; font-size: 15px; color: var(--brand); }
 .card-more::after { content: " →"; }
 
+/* hero image di kartu berita (bleed ke tepi kartu) */
+.news-card .card-img {
+  display: block;
+  width: calc(100% + 2 * var(--card-pad));
+  margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+}
+
 /* ── Contact ── */
 .cta-inner {
   display: grid; grid-template-columns: 7fr 5fr; gap: clamp(40px, 5vw, 64px);
