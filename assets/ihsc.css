@@ -259,22 +259,21 @@ p { max-width: 68ch; }
 .ops-card .members { margin-top: 18px; font-size: 15px; color: var(--charcoal); }
 .ops-card .members b { color: var(--brand); font-weight: 600; }
 
-/* ── kartu profil kepengurusan ── */
-.person { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--divider); }
-.person:last-of-type { border-bottom: 0; padding-bottom: 0; }
-.person-photo {
-  width: 72px; height: 84px; border-radius: 10px; overflow: hidden; flex-shrink: 0;
-  background: var(--mist); display: grid; place-items: center;
+/* ── kartu profil kepengurusan (foto besar) ── */
+.profile-photo {
+  display: block;
+  width: calc(100% + 2 * var(--card-pad));
+  max-width: none;
+  margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 0;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
 }
-.person-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.person-mono {
-  font-family: var(--font-display); font-weight: 700; font-size: 28px; color: var(--white);
-  background: linear-gradient(135deg, var(--green-800), var(--green-600));
-}
-.person-name { font-weight: 600; color: var(--charcoal); font-size: 15.5px; line-height: 1.35; }
-.person-role { font-size: 13px; color: var(--brand); font-weight: 600; margin-top: 2px; }
-.advisor-list { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--divider); font-size: 14px; color: var(--stone); line-height: 1.6; }
-.advisor-list strong { color: var(--charcoal); }
+.profile-name { font-weight: 700; font-size: 18px; color: var(--brand-deep); margin-top: 18px; line-height: 1.35; }
+.profile-role { font-size: 12.5px; font-weight: 600; color: var(--brand); margin-top: 3px; letter-spacing: .05em; text-transform: uppercase; }
+.ops-card .members { margin-top: 14px; font-size: 14px; color: var(--stone); line-height: 1.6; }
+.ops-card .members b { color: var(--brand); font-weight: 600; }
 
 /* ── Programs ── */
 .focus-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--divider); border: 1px solid var(--divider); border-radius: var(--radius); overflow: hidden; }
