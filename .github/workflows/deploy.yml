@@ -27,6 +27,7 @@ jobs:
               ! -path './.git/*' ! -path './.github/*' \
               ! -name 'README.md' ! -name '.gitignore' \
               ! -name 'NARASI-*' ! -name 'REFERENSI-*' \
+              ! -name 'AGENTS.md' ! -name 'CLAUDE.md' \
               -printf '%P\n')
 
           # buat hirarki folder (MKCOL; abaikan kalau sudah ada)
