@@ -33,9 +33,11 @@ Secrets yang dibutuhkan (sudah di-set di repo):
 ## Menambah artikel
 
 1. Salin `berita/artikel/artikel-001.html` → `artikel-XXX.html`, isi konten.
-2. Sisipkan kartu baru paling atas grid di `berita/index.html`
-   (blok `<a class="news-card">…</a>`).
-3. Push — otomatis tayang.
+2. Sisipkan kartu baru paling atas grid di `berita/index.html` (blok `<a class="news-card">…</a>`).
+3. **Setiap artikel wajib punya hero image di kartunya**: simpan ilustrasi di `assets/`,
+   lalu tambahkan `<img class="card-img" src="…" alt="…">` sebagai elemen pertama kartu
+   (pola: kartu artikel-002 di `index.html` & `berita/index.html`).
+4. Push — otomatis tayang.
 
 ## TODO (jangan dikerjakan dulu)
 
