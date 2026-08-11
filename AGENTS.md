@@ -68,7 +68,7 @@ REFERENSI-SK-PSH-IIKNU.md     # dokumen SK (tidak ikut deploy)
 
 ## Aturan kerja (dari Prinsipal)
 
-- **Jangan ubah layout homepage untuk foto pengurus** — foto menyusul, nunggu arahan. Jangan edit layout web di luar kebutuhan.
+- **Foto pengurus**: hanya pasang foto bagi yang sudah ada fotonya (kini: Direktur & Rektor). Pola: `.profile-photo` di dalam `.ops-card` (foto 3:4 rounded, judul kartu di atas, nama+role di bawah). Yang belum ada fotonya cukup teks di `.members`.
 - Naskah resmi (Visi & Misi, SK) jangan dikarang/diubah — sumber dari `REFERENSI-SK-PSH-IIKNU.md`.
 - Jangan `git add -A` sembarangan — stage path spesifik yang diubah.
 - Jangan taruh kredensial apa pun di repo.
