@@ -292,6 +292,7 @@ p { max-width: 68ch; }
 .news-card .card-img {
   display: block;
   width: calc(100% + 2 * var(--card-pad));
+  max-width: none;
   margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 0;
   aspect-ratio: 16 / 9;
   object-fit: cover;
