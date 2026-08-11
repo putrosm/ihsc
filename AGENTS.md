@@ -18,7 +18,7 @@
 Kredensial WebDAV sudah tersimpan sebagai GH Actions secrets — **jangan pernah menulisnya di file repo**.
 Agent cukup melakukan `git add` + `commit` + `push origin main`. Tidak butuh akses hosting langsung.
 
-File yang **TIDAK** ikut ter-upload (sudah dikecualikan di workflow): `.git/*`, `.github/*`, `README.md`, `.gitignore`, `NARASI-*`, `REFERENSI-*`, `AGENTS.md`, `CLAUDE.md`.
+File yang **TIDAK** ikut ter-upload (sudah dikecualikan di workflow): `.git/*`, `.github/*`, `README.md`, `.gitignore`, `NARASI-*`, `REFERENSI-*`, `PANDUAN-*`, `AGENTS.md`, `CLAUDE.md`.
 
 Setelah push, cek: `https://github.com/putrosm/ihsc/actions` → run terbaru `success`, lalu verifikasi URL live.
 

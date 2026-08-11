@@ -1,10 +1,15 @@
 # IHSC — Indonesian Humanitarian Study Center
 
 Situs resmi IHSC (Pusat Studi Kemanusiaan — IIK NU Tuban): homepage + kantor berita.
-Situs statis murni (HTML/CSS), tanpa build step.
+Situs statis murni (HTML/CSS), tanpa build step, bilingual EN/ID tanpa library i18n.
 
 - **Live:** https://ihsc.iiknutuban.ac.id
 - **Hosting:** cPanel (srv.iiknutuban.ac.id, WebDAV port 2078)
+
+Repo ini sengaja didokumentasikan agar bisa jadi bahan belajar terbuka —
+lihat [`PANDUAN-ARTIKEL.md`](PANDUAN-ARTIKEL.md) untuk tutorial lengkap
+menambah artikel bilingual (dengan studi kasus nyata) dan
+[`AGENTS.md`](AGENTS.md) untuk detail teknis lengkap yang dipakai agent AI.
 
 ## Struktur
 
@@ -12,7 +17,7 @@ Situs statis murni (HTML/CSS), tanpa build step.
 index.html                  # homepage (hero, tentang, pilar, kabar, kontak)
 assets/ihsc.css             # design system bersama (tokens, komponen)
 berita/index.html           # kantor berita (grid artikel)
-berita/artikel/artikel-001.html  # template artikel standar
+berita/artikel/artikel-002.html  # pola baku artikel terbaru (rujukan saat menyalin)
 ```
 
 ## Cara kerja deploy (push = tayang)
@@ -32,12 +37,9 @@ Secrets yang dibutuhkan (sudah di-set di repo):
 
 ## Menambah artikel
 
-1. Salin `berita/artikel/artikel-001.html` → `artikel-XXX.html`, isi konten.
-2. Sisipkan kartu baru paling atas grid di `berita/index.html` (blok `<a class="news-card">…</a>`).
-3. **Setiap artikel wajib punya hero image di kartunya**: simpan ilustrasi di `assets/`,
-   lalu tambahkan `<img class="card-img" src="…" alt="…">` sebagai elemen pertama kartu
-   (pola: kartu artikel-002 di `index.html` & `berita/index.html`).
-4. Push — otomatis tayang.
+Lihat [`PANDUAN-ARTIKEL.md`](PANDUAN-ARTIKEL.md) — tutorial langkah demi
+langkah lengkap dengan studi kasus, atau [`AGENTS.md`](AGENTS.md) untuk
+versi ringkas teknis.
 
 ## TODO (jangan dikerjakan dulu)
 
