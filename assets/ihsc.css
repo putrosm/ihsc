@@ -262,13 +262,12 @@ p { max-width: 68ch; }
 /* ── kartu profil kepengurusan (foto besar) ── */
 .profile-photo {
   display: block;
-  width: calc(100% + 2 * var(--card-pad));
-  max-width: none;
-  margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 0;
+  width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center top;
-  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+  border-radius: var(--radius);
+  margin-top: 6px;
 }
 .profile-name { font-weight: 700; font-size: 18px; color: var(--brand-deep); margin-top: 18px; line-height: 1.35; }
 .profile-role { font-size: 12.5px; font-weight: 600; color: var(--brand); margin-top: 3px; letter-spacing: .05em; text-transform: uppercase; }
