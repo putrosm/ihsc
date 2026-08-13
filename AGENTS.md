@@ -12,6 +12,13 @@
 - **Stack:** statis murni HTML/CSS/JS vanilla. **TANPA build step, tanpa framework.**
 - **Bahasa situs:** EN default + toggle ID (bilingual via `data-lang`, lihat di bawah).
 
+## "Hermes admin" itu apa? (baca ini kalau Prinsipal menyebut Hermes)
+
+- **"Hermes admin" = Hermes Agent**, asisten AI CLI buatan Nous Research — **bukan Claude Code Desktop**. Hermes adalah agent lain yang selama ini ikut mengerjakan repo ini (co-edit dengan Claude).
+- Hermes berjalan di **WSL2 Ubuntu** pada mesin Windows yang sama (user `adminkomodo`), dan dipakai Prinsipal untuk mengelola beberapa portal sekaligus (IHSC, HIFDI, dll.) via cron/otomasi.
+- **Status decommission:** WSL2 (tempat Hermes berjalan) sedang dalam proses di-decommission → Hermes akan berhenti beroperasi. Ini **tidak memengaruhi repo ini**: `C:\Users\Admin\ihsc` ada di drive Windows, tetap hidup, dan semua pekerjaan lanjutan (artikel, CSS, deploy) menjadi tanggung jawab penuh Claude.
+- Kalau Prinsipal menyebut "Hermes" atau "hermes admin" di pesan: itu merujuk ke asisten WSL2 di atas, bukan ke Claude. Jangan menunggu Hermes — kerjakan langsung sesuai AGENTS.md ini. Repo + dokumen ini adalah sumber kebenaran satu-satunya setelah Hermes nonaktif.
+
 ## DEPLOY: push ke main = otomatis tayang (jangan pernah deploy manual)
 
 `.github/workflows/deploy.yml` meng-upload seluruh repo ke WebDAV via curl.
