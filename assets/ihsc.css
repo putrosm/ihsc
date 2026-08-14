@@ -1,7 +1,7 @@
 /* ============================================================
-   IHSC — Indonesian Humanitarian Study Center
+   IHSC - Indonesian Humanitarian Study Center
    Pusat Studi Kemanusiaan · IIK NU Tuban
-   Design system v3 — NGO humanitarian international standard
+   Design system v3 - NGO humanitarian international standard
    ============================================================ */
 
 :root {
@@ -27,7 +27,7 @@
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Source Serif 4', 'Times New Roman', serif;
 
-  /* ── Rhythm — NGO standard: generous ── */
+  /* ── Rhythm - NGO standard: generous ── */
   --section-pad: clamp(100px, 11vw, 160px);
   --container:   1160px;
   --gutter:      clamp(28px, 5vw, 48px);
@@ -495,7 +495,7 @@ p { max-width: 68ch; }
   .brand-logo { width: 38px; height: 38px; }
   .header-top { gap: 10px; }
   .header-right { gap: 6px; }
-  /* CTA "Contact Us" disembunyikan di HP — header muat di layar kecil; kontak tetap ada di nav & footer */
+  /* CTA "Contact Us" disembunyikan di HP - header muat di layar kecil; kontak tetap ada di nav & footer */
   .nav-cta { display: none; }
   .lang-btn { padding: 6px 10px; font-size: 11px; }
   /* Panel PROFILE: susun vertikal supaya teks & tanggal tidak tumpang tindih di layar sempit */
