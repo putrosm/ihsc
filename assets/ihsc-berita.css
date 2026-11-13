@@ -252,7 +252,7 @@
 .slide-summary { display: none; }
 
 @media (max-width: 640px) {
-  .gallery-slide .gallery-open { display: none; }
+  .gallery-slide .gallery-open--inf { display: none; }  /* hanya slide infografis */
   .slide-summary {
     display: block;
     background: #fff;
