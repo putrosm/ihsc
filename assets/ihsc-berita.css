@@ -52,8 +52,16 @@
 
 /* ── Galeri foto ───────────────────────────────────────────────────────── */
 .gallery { margin: 30px 0 34px; min-width: 0; }
-.gallery-stage { position: relative; min-width: 0; }
+.gallery-stage {
+  position: relative; min-width: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "main main main" "prev count next";
+  align-items: center;
+  column-gap: 10px;
+}
 .gallery-main {
+  grid-area: main;
   position: relative;
   align-items: flex-start;
   display: flex;
@@ -66,6 +74,8 @@
 .gallery-main::-webkit-scrollbar { display: none; }
 .gallery-slide { position: relative; flex: 0 0 100%; scroll-snap-align: start; display: flex; flex-direction: column; }
 .gallery-slide img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.gallery-open { display: block; position: relative; cursor: zoom-in; text-decoration: none; }
+.gallery-open:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .gallery-cap {
   /* caption DI BAWAH foto, tidak menutupi gambar */
   position: static;
@@ -77,30 +87,38 @@
   line-height: 1.45;
 }
 .gallery-count {
-  position: absolute; top: 12px; right: 12px;
-  background: rgba(0, 0, 0, .58);
-  color: #fff;
+  grid-area: count;
+  justify-self: center;
+  background: #EAF1EB;
+  color: var(--brand);
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .04em;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 99px;
+  white-space: nowrap;
 }
 .gallery-nav {
-  position: absolute; top: 50%; transform: translateY(-50%);
   width: 42px; height: 42px;
   display: grid; place-items: center;
-  border: none; border-radius: 50%;
-  background: rgba(0, 0, 0, .42); color: #fff;
+  border: 1px solid var(--line, #D9E2DA);
+  border-radius: 50%;
+  background: #fff; color: var(--brand);
   cursor: pointer; z-index: 3;
-  transition: background .18s, opacity .18s;
+  transition: background .18s, opacity .18s, border-color .18s;
 }
 .gallery-nav svg { width: 20px; height: 20px; fill: currentColor; }
-.gallery-nav:hover { background: rgba(0, 0, 0, .66); }
+.gallery-nav:hover { background: #EAF1EB; border-color: var(--brand); }
 .gallery-nav:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .gallery-nav:disabled { opacity: .32; cursor: default; }
-.gallery-nav--prev { left: 14px; }
-.gallery-nav--next { right: 14px; }
+.gallery-nav--prev { grid-area: prev; justify-self: start; }
+.gallery-nav--next { grid-area: next; justify-self: end; }
+
+.gallery-hint {
+  margin: 8px 0 0; font-size: 12px; color: var(--stone, #6B7280);
+  display: flex; align-items: center; gap: 6px;
+}
+.gallery-hint svg { width: 14px; height: 14px; fill: currentColor; flex: 0 0 auto; }
 
 .gallery-thumbs {
   display: flex; gap: 10px; margin-top: 12px;
@@ -214,4 +232,14 @@
   .gallery-nav--prev { left: 8px; }
   .gallery-nav--next { right: 8px; }
   .gallery-thumbs button { flex: 0 0 84px; }
+}
+
+
+/* ── Galeri di layar ponsel: kontrol pindah ke bawah gambar (24 Okt 2026) ──
+   Alasan: tombol panah dan penghitung sebelumnya menutupi isi infografis,
+   dan gambar tidak bisa dibuka penuh sehingga teksnya tak terbaca. */
+@media (max-width: 640px) {
+  .gallery-nav { width: 38px; height: 38px; }
+  .gallery-count { font-size: 11px; padding: 4px 10px; }
+  .gallery-thumbs button { flex: 0 0 82px; }
 }
