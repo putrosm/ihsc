@@ -243,3 +243,40 @@
   .gallery-count { font-size: 11px; padding: 4px 10px; }
   .gallery-thumbs button { flex: 0 0 82px; }
 }
+
+
+/* ── Ringkasan teks untuk infografis di ponsel (24 Okt 2026) ──────────────
+   Infografis 1600 px tidak terbaca di kolom 340 px, sekalipun bisa di-zoom.
+   Di layar kecil gambar diganti ringkasan teks yang mengalir, dengan tautan
+   ke berkas ukuran penuh. Desktop tetap menampilkan infografisnya. */
+.slide-summary { display: none; }
+
+@media (max-width: 640px) {
+  .gallery-slide .gallery-open { display: none; }
+  .slide-summary {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line, #D9E2DA);
+    border-radius: 12px;
+    padding: 16px 16px 14px;
+  }
+  .slide-summary .ss-k {
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--brand); font-weight: 700;
+  }
+  .slide-summary .ss-t {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: 19px; line-height: 1.2; font-weight: 700; margin: 4px 0 8px;
+  }
+  .slide-summary ul { margin: 0 0 10px 16px; }
+  .slide-summary li { font-size: 14px; line-height: 1.45; margin-bottom: 6px; }
+  .slide-summary .ss-big {
+    font-family: var(--font-display, 'Playfair Display', serif);
+    font-size: 34px; line-height: 1; color: var(--brand); font-weight: 700;
+  }
+  .slide-summary .ss-note { font-size: 11px; color: var(--stone); margin-top: 8px; }
+  .slide-summary .ss-open {
+    display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 600;
+    color: var(--brand); text-decoration: underline;
+  }
+}
