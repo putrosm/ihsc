@@ -60,6 +60,21 @@ REFERENSI-SK-PSH-IIKNU.md     # dokumen SK (tidak ikut deploy)
 11. **Urutan "next/prev":** daftar berita = terbaru dulu, jadi "Next article" artikel-00N = artikel-00(N-1).
 12. Verifikasi (di bawah) → commit → push.
 
+## Paket visual wajib per artikel (aturan Prinsipal, 18 Nov 2026)
+
+Setiap artikel baru WAJIB membawa empat berkas visual, bukan satu:
+
+1. **Hero 16:9** (1600x900) — foto dokumenter berlisensi, tanpa judul menempel di gambar. Pita kecil "IHSC" di sudut kiri bawah boleh.
+2. **Galeri dalam artikel** minimal 2 foto (3 disarankan), 3:2 (1400x933), caption + kredit di bawah foto, memakai blok `.gallery data-gallery` yang sudah ada di `ihsc-berita.css`.
+3. **Kartu IG feed 4:5** (1080x1350) — foto di atas, panel krem di bawah, judul huruf tebal, satu angka saja, kredit di kaki.
+4. **Lembar IG Story 9:16** (1080x1920) — WAJIB, jangan ditinggal. Zona aman: konten di antara y=120 dan y=1700. Isi: pita "KANTOR BERITA IHSC" + alamat situs, foto, judul, satu kalimat, satu angka, kredit kecil di dalam foto.
+
+Semua foto wajib berlisensi jelas (domain publik, CC BY, CC BY-SA) dan kreditnya dicetak: nama fotografer, lisensi, "via Wikimedia Commons" bila dari sana.
+
+Visual tidak boleh memakai grafik data sebagai pengganti foto. Infografis hanya bila benar-benar perlu, maksimal satu, dan tidak menggantikan foto manusia.
+
+Gaya per artikel ditulis lokal di dalam berkas artikel (blok `<style>` cakupan `.pa-*`). DILARANG mengubah `assets/ihsc.css` atau template global untuk keperluan satu artikel.
+
 ## CACHE CLOUDFLARE — sangat penting
 
 - HTML selalu fresh (DYNAMIC), tapi **CSS statis di-cache** (`cache-control: public, max-age=14400`).
